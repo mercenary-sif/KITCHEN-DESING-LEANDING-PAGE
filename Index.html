@@ -494,14 +494,17 @@
     </footer>
     <script>
          var kitchen = 1;
+         const body = document.body;
          displayCover(kitchen);
          function showSidebar(){
         const sidebar = document.querySelector('.KitchenStudio__sidebar');
         sidebar.style.display = 'flex'
+        body.classList.add('no-scroll');
     }
     function hideSidebar(){
         const sidebar = document.querySelector('.KitchenStudio__sidebar');
         sidebar.style.display = 'none'
+        body.classList.remove('no-scroll');
     }
     function displayCover(k){
          var i ; 
