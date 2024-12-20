@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Mercenary Kitchen Desing</title>
+</head>
+<body>
+    <nav>
+        <ul class="KitchenStudio__sidebar">
+            <li  ><a href="#"><svg onclick=hideSidebar() xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#dfd6d0"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">KITCHEN</a></li>
+            <li><a href="#">PRODUCTION</a></li>
+            <li><a href="#">PAGES</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+             <div class="KitchenStudio__sidebar-icons">
+            <li><a href="#"><svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#eee4e0"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></a></li>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#eee4e0"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></a></li>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#eee4e0"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a></li>
+          
+             </div>    
+        </ul>
+        <ul>
+            <li> 
+               <div class="navbar-logo">
+                <img src="logo.png" alt="logo">
+               </div>
+                <a href="#">MKITCHEN</a>
+            </li>
+            <li class="hideOnetablet"><a href="#">HOME</a></li>
+            <li class="hideOnetablet"><a href="#">KITCHEN</a></li>
+            <li class="hideOnetablet"><a href="#">PRODUCTION</a></li>
+            <li class="hideOnetablet"><a href="#">PAGES</a></li>
+            <li class="hideOnetablet"><a href="#">SHOP</a></li>
+            <li class="hideOnetablet"><a href="#">BLOG</a></li>
+            <li class="hideOnetablet"><a href="#">CONTACT</a></li>
+            <li class="hideOnemobile"><a href="#"><svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#eee4e0"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></a></li>
+            <li class="hideOnemobile"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#eee4e0"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></a></li>
+            <li class="hideOnemobile"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#eee4e0"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a></li>
+            <li class="menu-bottun" onclick=showSidebar() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#dfd6d0"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      
+        </ul>
+    </nav>
+    <header>
+        <div class="KitchenStudio__header">
+            <div class="KitchenStudio__header-cover">
+                <img src="Images/Kitchen 4.jpg" alt="cover">
+            </div>
+            <div class="KitchenStudio__header-cover">
+                <img src="Images/Kitchen 7.jpg" alt="cover">
+            </div>
+            <div class="KitchenStudio__header-cover">
+                <img src="Images/Kitchen 2.jpg" alt="cover">
+            </div>
+            <div class="KitchenStudio__header-container">
+                <h1>Desing Your Kitchen With The Expert</h1>
+                <p class="KitchenStudio__header-container-price" >$150 deposit</p>
+                <p class="KitchenStudio__header-container-price" >$500 deposit</p>
+                <p class="KitchenStudio__header-container-price" >$750 deposit</p>
+                <p>3D Desing & Measurement</p>
+                <button type='button' >
+                    VISIT SHOW ROOM 
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1e1e"><path d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z"/></svg></button>
+                <div class="KitchenStudio__header-container_dots">
+                    <span class="KitchenStudio__header-container_dots-dot" onclick=currentSlide(1) ></span>
+                    <span class="KitchenStudio__header-container_dots-dot" onclick=currentSlide(2) ></span>
+                    <span class="KitchenStudio__header-container_dots-dot" onclick=currentSlide(3) ></span>
+                </div>
+                </div>
+        </div>
+    </header>
+    <div class="KitchenStudio__aboutus section__pedding">
+        <div class="KitchenStudio__aboutus-experiance">
+           <h1> 25 </h1>
+           <p> Years Experience Work </p>
+        </div>
+        <div class="KitchenStudio__aboutus-header">
+           <h3>About us</h3>
+           <h1>Creative Solutions By Professional Designers</h1>
+        </div>
+        <div class="KitchenStudio__aboutus-content">
+            <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc , risus euismod
+                orci venenatis , ut metus justo placerat. Sed feugiat facilisis egestas viverra suspendisse.</p>
+                <button type='button' >
+                   CONTINUE READING
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#dfd6d0"><path d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z"/></svg></button>
+            </div>
+        </div>
+    </div>
+    <div class="KitchenStudio__collections section__pedding">
+        <div class="KitchenStudio__collections-container">
+            <div class="KitchenStudio__collections-container__cover">
+                <img src="Images/Kitchen 14.jpg" alt="collection-cover">
+            </div>
+            <div class="KitchenStudio__collections-container__content">
+                <h3>Country Collection</h3>
+                
+                <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc , risus euismod
+                    orci venenatis .</p>
+                <h4>READ MORE</h4>
+            </div>
+        </div>
+        <div class="KitchenStudio__collections-container">
+            <div class="KitchenStudio__collections-container__cover">
+                <img src="Images/Kitchen 11.jpg" alt="collection-cover">
+            </div>
+            <div class="KitchenStudio__collections-container__content">
+                <h3>Concord Collection</h3>
+                <p></p>
+                <h4>READ MORE</h4>
+            </div>
+        </div>
+        <div class="KitchenStudio__collections-container">
+            <div class="KitchenStudio__collections-container__cover">
+                <img src="Images/Kitchen 6.jpg" alt="collection-cover">
+            </div>
+            <div class="KitchenStudio__collections-container__content">
+                <h3>Classic Collection</h3>
+                <p></p>
+                <h4>READ MORE</h4>
+            </div>
+        </div>
+        <div class="KitchenStudio__collections-container">
+            <div class="KitchenStudio__collections-container__cover">
+                <img src="Images/Kitchen 16.jpg" alt="collection-cover">
+            </div>
+            <div class="KitchenStudio__collections-container__content">
+                <h3>Luxor Collection</h3>
+                <p></p>
+                <h4>READ MORE</h4>
+            </div>
+        </div>
+    </div>
+    <div class="KitchenStudio__whychooseus section__pedding">
+        <div class="KitchenStudio__whychooseus-header">
+            <h3>WHY CHOOSE US</h3>
+            <h1>Extremely high Standard Of Customer Satisfaction</h1>
+        </div>
+        <div class="KitchenStudio__whychooseus-container">
+            <div class="KitchenStudio__whychooseus-container__content">
+                <div class="KitchenStudio__whychooseus-container__content-cover">
+                    <img src="Images/logo--4.png" alt="icon">
+                </div>
+                <h3>Full Services</h3>
+                <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc , risus euismod
+                orci venenatis .</p>
+                
+            </div>
+            <div class="KitchenStudio__whychooseus-container__content">
+                <div class="KitchenStudio__whychooseus-container__content-cover">
+                    <img src="Images/Icon 3.png" alt="icon">
+                </div>
+                <h3>Deliver value</h3>
+                <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc , risus euismod
+                orci venenatis .</p>
+                
+            </div>
+            <div class="KitchenStudio__whychooseus-container__content">
+                <div class="KitchenStudio__whychooseus-container__content-cover">
+                    <img src="Images/logo--5.png" alt="icon">
+                </div>
+                <h3>Patrens</h3>
+                <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc , risus euismod
+                orci venenatis .</p>
+                
+            </div>
+            <div class="KitchenStudio__whychooseus-container__content">
+                <div class="KitchenStudio__whychooseus-container__content-cover">
+                    <img src="Images/logo--3.png" alt="icon">
+                </div>
+                <h3>Integrity</h3>
+                <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc , risus euismod
+                orci venenatis .</p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="KitchenStudio__show section__pedding">
+          <div class="KitchenStudio__show-container">
+                 <div class="KitchenStudio__show-container_cover">
+                    <img src="Images/Kitchen 5.jpg" alt="KitchenStudio__show-cover">
+                 </div>
+                 <div class="KitchenStudio__show-container__content">
+                    <div class="KitchenStudio__show-container__content-box">
+                        <h3>PROMO VIDEO</h3>
+                        <h1>Ensuring a safe experience from desing to installation</h1>
+                        <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc , risus euismod
+                            orci venenatis , ut metus justo placerat. Sed feugiat facilisis egestas viverra suspendisse.</p>
+                            <button type='button' >
+                                MORE VIDEO
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1e1e"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/></svg></button>             
+                    </div>
+                    <div class="KitchenStudio__show-container__content-video">
+                        <video id="video-player" src="lv_0_20241122171959.mp4"  muted  ></video>
+                        <div class="play-icon">
+                            <img onclick=playVideo() src="player-logo3.png" alt="">
+                        </div>
+                    </div>
+                 </div>
+          </div>
+          <div class="KitchenStudio__show-brands">
+            <div>
+                <img src="Images/atlassian.png" alt='google'/>
+              </div>
+              <div>
+                <img src="Images/google.png" alt='atlassian'/>
+              </div>
+              <div>
+                <img src="Images/dropbox.png" alt='dropbox'/>
+              </div>
+              <div>
+                <img src="Images/slack.png" alt='shopify'/>
+              </div>
+              <div>
+                <img src="Images/shopify.png" alt='slack'/>
+              </div>
+          </div>
+          <div class="KitchenStudio__show-line"></div>
+    </div>
+    <div class="KitchenStudio__ourproject section__pedding">
+        <div class="KitchenStudio__ourproject-header">
+            <h3>OUR PROJECT</h3>
+            <h1>Explore our kitchen desings</h1>
+            <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc , risus euismod
+                orci venenatis .</p>
+               
+        </div>
+        <div class="KitchenStudio__ourproject-grid">
+                <div class="KitchenStudio__ourproject-grid__container">
+                    <div class="KitchenStudio__ourproject-grid__container-cover">
+                        <img src="Images/Kitchen 23.jpg" alt="prj-cover">
+                    </div>
+                    <div class="KitchenStudio__ourproject-grid__container-content">
+                        <h3>Kitchen project 1</h3>
+                        <h4>Modern desing</h4>
+                    </div>
+                </div>
+
+                <div class="KitchenStudio__ourproject-grid__container">
+                    <div class="KitchenStudio__ourproject-grid__container-cover">
+                        <img src="Images/Kitchen 2.jpg" alt="prj-cover">
+                    </div>
+                    <div class="KitchenStudio__ourproject-grid__container-content">
+                        <h3>Kitchen project 2</h3>
+                        <h4>Modern desing</h4>
+                    </div>
+                </div>
+
+                <div class="KitchenStudio__ourproject-grid__container">
+                    <div class="KitchenStudio__ourproject-grid__container-cover">
+                        <img src="Images/Kitchen 13.jpg" alt="prj-cover">
+                    </div>
+                    <div class="KitchenStudio__ourproject-grid__container-content">
+                        <h3>Kitchen project 3</h3>
+                        <h4>Modern desing</h4>
+                    </div>
+                </div>
+                <div class="KitchenStudio__ourproject-grid__container">
+                    <div class="KitchenStudio__ourproject-grid__container-cover">
+                        <img src="Images/Kitchen 18.jpg" alt="prj-cover">
+                    </div>
+                    <div class="KitchenStudio__ourproject-grid__container-content">
+                        <h3>Kitchen project 4</h3>
+                        <h4>Modern desing</h4>
+                    </div>
+                </div>
+                <div class="KitchenStudio__ourproject-grid__container">
+                    <div class="KitchenStudio__ourproject-grid__container-cover">
+                        <img src="Images/Kitchen 21.jpg" alt="prj-cover">
+                    </div>
+                    <div class="KitchenStudio__ourproject-grid__container-content">
+                        <h3>Kitchen project 5</h3>
+                        <h4>Modern desing</h4>
+                    </div>
+                </div>
+                <div class="KitchenStudio__ourproject-grid__container">
+                    <div class="KitchenStudio__ourproject-grid__container-cover">
+                        <img src="Images/Kitchen 1.jpg" alt="prj-cover">
+                    </div>
+                    <div class="KitchenStudio__ourproject-grid__container-content">
+                        <h3>Kitchen project 6</h3>
+                        <h4>Modern desing</h4>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="KitchenStudio__process section__pedding">
+     <div class="KitchenStudio__process-box">
+        <div class="KitchenStudio__process-cover">
+            <img src="Images/Kitchen 29.jpg" alt="cover">
+          </div>
+          <div class="KitchenStudio__process-container">
+            <div class="KitchenStudio__process-container__logo">
+                <img src="Images/logo--6.png" alt="container-logo">
+                <p>25</p>
+            </div>
+            <div class="KitchenStudio__process-container__content">
+                <h1>Stunning Kitchens , simplified process </h1>
+                <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc , risus euismod
+                    orci venenatis , ut metus justo placerat. Sed feugiat facilisis egestas viverra suspendisse.</p>
+                    <button type='button' >
+                        MORE INFORMATION
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1e1e"><path d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z"/></svg>
+                    </button>
+            </div>
+          </div>
+     </div>
+    </div>
+    <div class="KitchenStudio__clientsreviews section__pedding">
+        <div class="KitchenStudio__clientsreviews-header">
+            <h3>OUR CLIENTS</h3>
+            <h1>Here's what our satisfied clients are saying </h1>
+        </div>
+        <div class="KitchenStudio__clientsreviews-grid">
+             <div class="KitchenStudio__clientsreviews-grid__container">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#dfd6d0" transform="scale(-1, -1)"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92ZM320-500q25 0 42.5-17.5T380-560q0-25-17.5-42.5T320-620q-25 0-42.5 17.5T260-560q0 25 17.5 42.5T320-500Zm360 0q25 0 42.5-17.5T740-560q0-25-17.5-42.5T680-620q-25 0-42.5 17.5T620-560q0 25 17.5 42.5T680-500Zm0-60Zm-360 0Z"/></svg>
+                <p>These are the most beautifull combinies !!! so well made. The contractor installing them , 
+                    said they're some of best he's ever seen . Evryone that sees them wants to know where i bought them .
+                </p>
+                <div class="KitchenStudio__clientsreviews-grid__container-profile">
+                    <div class="KitchenStudio__clientsreviews-grid__container-profile__pic">
+                        <img src="Images/profilepic 3.jpg" alt="profile pic">
+                    </div>
+                    <div class="KitchenStudio__clientsreviews-grid__container-profile__user">
+                        <h4>Joshua Kieth</h4>
+                        <h5>Senior client</h5>
+                    </div>
+                </div>
+             </div>
+             <div class="KitchenStudio__clientsreviews-grid__container">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#dfd6d0" transform="scale(-1, -1)"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92ZM320-500q25 0 42.5-17.5T380-560q0-25-17.5-42.5T320-620q-25 0-42.5 17.5T260-560q0 25 17.5 42.5T320-500Zm360 0q25 0 42.5-17.5T740-560q0-25-17.5-42.5T680-620q-25 0-42.5 17.5T620-560q0 25 17.5 42.5T680-500Zm0-60Zm-360 0Z"/></svg>
+                <p>These are the most beautifull combinies !!! so well made. The contractor installing them , 
+                    said they're some of best he's ever seen . Evryone that sees them wants to know where i bought them .
+                </p>
+                <div class="KitchenStudio__clientsreviews-grid__container-profile">
+                    <div class="KitchenStudio__clientsreviews-grid__container-profile__pic">
+                        <img src="Images/profilepic 1.jpg" alt="profile pic">
+                    </div>
+                    <div class="KitchenStudio__clientsreviews-grid__container-profile__user">
+                        <h4>Koroashi No Sif</h4>
+                        <h5>Senior client</h5>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <div class="KitchenStudio__ourgallery section__pedding">
+        <div class="KitchenStudio__ourgallery-container">
+         <div class="KitchenStudio__ourgallery-container__cover">
+            <img src="Images/Kitchen 22.jpg" alt="approach-cover">
+         </div>
+         <div class="KitchenStudio__ourgallery-container__content">
+            <h3>METHOD</h3>
+            <h1>A modern approch to desing</h1>
+            <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc , risus euismod
+                orci venenatis , ut metus justo placerat. Sed feugiat facilisis egestas viverra suspendisse.</p>
+                <button type='button' >
+                    VIEW OUR GALLERY 
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1e1e"><path d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z"/></svg>
+                </button>
+         </div>
+        </div>
+        <div class="KitchenStudio__ourgallery-details">
+            <div>
+                <h1>25+</h1>
+                <p>Interior desing</p>
+            </div>
+            <div>
+                <h1>93+</h1>
+                <p>Architecture</p>
+            </div>
+            <div>
+                <h1>48+</h1>
+                <p>Contruction</p>
+            </div>
+            <div>
+                <h1>68+</h1>
+                <p>Project done</p>
+            </div>
+        </div>
+        <div class="KitchenStudio__show-line"></div>
+    </div>
+    <div class="KitchenStudio__ourblog section__pedding">
+        <div class="KitchenStudio__ourblog-header">
+            <h3>OUR BLOG</h3>
+            <h1>Follox the latest news</h1>
+        </div>
+        <div class="KitchenStudio__ourblog-grid">
+            <div class="KitchenStudio__ourblog-grid__container">
+                <div class="KitchenStudio__ourblog-grid__container-cover">
+                    <img src="Images/Kitchen 8.jpg" alt="-">
+                </div>
+                <div class="KitchenStudio__ourblog-grid__container-content">
+                    <h3>A Stunning Classic Shaker Kitchen In Halesowen</h3>
+                    <div class="KitchenStudio__ourblog-grid__container-content__detail">
+                        <h5> <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#dbac47e5"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
+                            24 nov 2024</h5>
+                        <p>by Admin</p>   
+                    </div>
+                    <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc , risus euismod
+                        orci venenatis viverra suspendisse.</p>
+                    <h4>READ MORE</h4> 
+                </div>
+            </div>
+
+            <div class="KitchenStudio__ourblog-grid__container">
+                <div class="KitchenStudio__ourblog-grid__container-cover">
+                    <img src="Images/Kitchen 9.jpg" alt="-">
+                </div>
+                <div class="KitchenStudio__ourblog-grid__container-content">
+                    <h3>A Stunning Classic Shaker Kitchen In Halesowen</h3>
+                    <div class="KitchenStudio__ourblog-grid__container-content__detail">
+                        <h5> <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#dbac47e5"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
+                            24 nov 2024</h5>
+                        <p>by Admin</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc , risus euismod
+                        orci venenatis viverra suspendisse.</p>
+                      
+                    <h4>READ MORE</h4> 
+                </div>
+            </div>
+
+            <div class="KitchenStudio__ourblog-grid__container">
+                <div class="KitchenStudio__ourblog-grid__container-cover">
+                    <img src="Images/Kitchen 5.jpg" alt="-">
+                </div>
+                <div class="KitchenStudio__ourblog-grid__container-content">
+                    <h3>A Stunning Classic Shaker Kitchen In Halesowen</h3>
+                    <div class="KitchenStudio__ourblog-grid__container-content__detail">
+                        <h5> <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#dbac47e5"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
+                            24 nov 2024</h5>
+                        <p>by Admin</p> 
+                    </div>
+                    <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc , risus euismod
+                        orci venenatis viverra suspendisse.</p>
+                    <h4>READ MORE</h4> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="section__pedding">
+        <div class="KitchenStudio__footer-cover">
+            <img src="Images/Kitchen 5.jpg" alt="footer-cover">
+        </div>
+        <div class="KitchenStudio__footer-heading">
+            <h3>YOU DREAM IT , WE DEASING IT</h3>
+            <h1 >
+              We can build you the kitchen of your dreams
+            </h1>
+            <button type='button' >
+                VIEW OUR GALLERY 
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1e1e"><path d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z"/></svg>
+            </button>
+          </div>
+         <div class="KitchenStudio__footer-line"></div>
+          <div class="KitchenStudio__footer-links">
+            <div class="KitchenStudio__footer-links_logo">
+                <img src="logo.png" alt="logo" />
+           </div>
+            <div class="KitchenStudio__footer-links_logo_div">
+                <h4>Social Media</h4>
+                <p>Facebook</p>
+                <p>Instgram</p>
+                <p>X</p>
+          </div>
+          <div class="KitchenStudio__footer-links_logo_div">
+            <h4>Home</h4>
+            <p>Production</p>
+            <p>Shop</p>
+            <p>About us</p>
+          </div>
+          <div class="KitchenStudio__footer-links_logo_div">
+            <h4> Contact Us</h4>
+            <p>Get your kitchen desing now</p>
+            <div class="KitchenStudio__footer-Contactus_input">
+                <input type='email' placeholder='Your adress @email ...'/>
+                <button type='button'>Subscribe</button>
+            </div>
+                
+            </div>
+          </div>
+    
+          <div class="KitchenStudio__footer-copyright">
+            <p>© 2024 KitchenStudio codding by The Mercenary Sif Eddine Aguaguena. All rights reserved.</p>
+          </div>
+    </footer>
+    <script>
+         var kitchen = 1;
+         displayCover(kitchen);
+         function showSidebar(){
+        const sidebar = document.querySelector('.KitchenStudio__sidebar');
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.KitchenStudio__sidebar');
+        sidebar.style.display = 'none'
+    }
+    function displayCover(k){
+         var i ; 
+         var cover = document.getElementsByClassName("KitchenStudio__header-cover");
+         var price = document.getElementsByClassName("KitchenStudio__header-container-price");
+         var dots = document.getElementsByClassName("KitchenStudio__header-container_dots-dot");
+         
+        
+         if(k > cover.length){
+            kitchen=1;
+         }
+         if(k < 1){
+            kitchen= cover.length;
+         }
+         for(i=0 ; i < cover.length ; i++){
+            cover[i].style.display ="none"
+         }
+         for(i=0 ; i < price.length ; i++){
+            price[i].style.display ="none"
+         }
+         for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+         
+         cover[kitchen - 1].style.display = "flex";
+         price[kitchen - 1].style.display = "block";
+         dots[kitchen - 1].classList.add("active");
+       
+
+    }
+    function nextCover(n){
+        displayCover(kitchen +=n)
+    }
+    function currentSlide(n){
+        displayCover(kitchen = n)
+    }
+   
+
+    function playVideo() {
+    const video = document.getElementById('video-player');
+    const playButton = document.getElementsByClassName('play-icon')[0]; // Access the first element with the class 'play-icon'
+
+    // Initially hide the video controls
+    video.controls = false;
+
+    // Play the video and show controls when clicking the play button
+    playButton.addEventListener('click', function () {
+        if (video.paused) {
+            video.play();
+            video.controls = true; // Show controls
+            playButton.style.display = 'none'; // Hide play icon
+        }
+    });
+
+    // Hide controls and show play icon when the video is paused
+    video.addEventListener('pause', function () {
+        video.controls = false; // Hide controls
+        playButton.style.display = 'block'; // Show play icon
+    });
+}
+
+
+
+    </script>
+</body>
+</html>
